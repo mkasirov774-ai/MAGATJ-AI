@@ -1,0 +1,4 @@
+with zipfile.ZipFile("/tmp/maga_setup_test/maga-ai.zip", "r") as z:
+    for name in sorted(z.namelist()):
+        info = z.getinfo(name)
+        print(f"{name:20} -> {info.file_size:6} байт")

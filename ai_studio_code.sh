@@ -1,0 +1,1 @@
+python3 setup_maga_ai.py

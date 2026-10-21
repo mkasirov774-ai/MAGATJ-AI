@@ -1,0 +1,14 @@
+import os
+import zipfile
+import subprocess
+import shutil
+
+# Test building setup_maga_ai.py logic
+test_dir = "/tmp/maga_setup_test"
+if os.path.exists(test_dir):
+    shutil.rmtree(test_dir)
+os.makedirs(test_dir, exist_ok=True)
+os.chdir(test_dir)
+
+# Let's verify our script creates everything cleanly
+print("Working in:", test_dir)
